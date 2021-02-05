@@ -1,0 +1,25 @@
+package Lab16;
+
+public class Lecture16 
+{
+ public static void main (String [] args)	
+ 
+ {
+	int x=100;
+	int y=99;
+	int z =98;
+	//Arrays in Java
+
+	
+	String [] A= {"A", "B", "C"};
+	for (int i=A.length-1 ;i>=0 ;i--)
+	{
+	System.out.println(A [i]);
+	
+    }
+	
+	
+ }
+
+
+}

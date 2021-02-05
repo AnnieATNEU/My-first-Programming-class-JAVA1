@@ -1,0 +1,32 @@
+package Lab13;
+
+import java.util.Scanner;
+
+public class Lecture13 {
+	public static void main (String [] args)
+	{
+	
+	// Check whether an alphabet is vowel or consonant using
+	// entering letters by the user
+	Scanner input=new Scanner (System.in);
+	System.out.println("Please Enter a Letter");
+	char letter=input.next().charAt(0);
+	//Character.toUpperCase(letter); to 
+	//if ..else
+	
+	if (Character.toUpperCase(letter)== 'A'
+			||letter== 'E'
+			||letter== 'O'
+			||letter== 'I'
+			||letter== 'U')
+	{
+	    System.out.println("The letter is a vowel");
+	    
+	}
+	
+	else
+	{
+		System.out.println("The letter is not a vowel");
+	}
+}
+}

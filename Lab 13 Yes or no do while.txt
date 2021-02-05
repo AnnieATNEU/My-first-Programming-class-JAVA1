@@ -1,0 +1,36 @@
+package Lab13;
+
+import java.util.Scanner;
+
+public class Lecture13 {
+   
+	
+	public static void main (String [] args)
+   { 
+	  //Write a do-while loop that asks the user to enter two numbers.
+	//The numbers should be added,and the sum displayed. 
+		//The loop should ask the user whether he or she wishes to perform the
+		//operation again. If so, the loop should repeat; otherwise it should terminate.
+		Scanner input= new Scanner (System.in);
+		int number1;
+		int number2;
+	    char userchoice;
+		 
+		  do
+	        {
+	            System.out.print("Enter the first number ");
+	            number1 = input.nextInt();
+	          
+	            System.out.print("Enter the second number ");
+	            number2 = input.nextInt();
+	            
+	            int sum = number1 + number2;
+	            System.out.println("Sum of numbers: " + sum);
+	        
+	            System.out.print("Do you want to continue y/n? ");
+	            userchoice = input.next().charAt(0);
+	        }
+		  while(userchoice=='y' || userchoice == 'Y');
+				
+}
+}

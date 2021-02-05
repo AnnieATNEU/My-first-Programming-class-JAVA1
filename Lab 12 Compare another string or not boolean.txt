@@ -1,0 +1,37 @@
+package Lab12;
+
+
+
+public class Lecture12 {
+            public static void main (String [] args)
+ {
+	
+				           //3.	3.	Write a Java program to check whether a given string 
+            				//ends with the contents of another string.  
+            	   
+            	        String s1 = "The content is more";
+            	        String s2 = "The content is less";
+            	        
+            	        System.out.println("String 1: " + s1);
+            	        System.out.println("String 2: " + s2); 
+            	        String end_string = "more";
+
+            	        // Check first two Strings end with end_string
+            	        boolean ends1 = s1.endsWith(end_string);
+            	        boolean ends2 = s2.endsWith(end_string);
+
+            	        // Display the results .
+            	        System.out.println("\"" + s1 + "\" ends with " +
+            	            " " + end_string + "\"? " + ends1);
+            	        System.out.println("\"" + s2 + "\" ends with " +
+            	            "\"" + end_string + "\"? " + ends2);
+            	   
+            	   
+            	   
+            	   
+            	   }
+            	}
+	
+		 
+	 
+ 

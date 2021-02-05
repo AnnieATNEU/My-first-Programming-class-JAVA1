@@ -1,0 +1,38 @@
+package Lab15;
+
+import java.util.Scanner;
+
+public class Lecture15 {
+	
+	public static void main (String [] args)
+	{
+		//Find interest rate based on year
+		
+		
+	/*	// Convert from If statement to switch  
+		if (numOfYears == 7)
+		 annualInterestRate = 7.25;
+		 else if (numOfYears == 15)
+		 annualInterestRate = 8.50;
+		 else if (numOfYears == 30)
+		 annualInterestRate = 9.0;
+		 else 
+		 {
+		 System.out.println("Wrong number of years"); 
+         System.exit(0);
+		 }	*/
+		// conversion to switch
+		Scanner input= new Scanner ( System.in);
+		System.out.println("Please enter the number of years : ");
+		int numOfYears= input.nextInt();
+		
+		switch(numOfYears)
+		{
+		case 7 : System.out.println ("Annual Interest Rate is 7.25");break;
+		case 15 :System.out.println ("Annual Interest Rate is 8.50"); break;
+		case 30 :System.out.println ("Annual Interest Rate is 9.0");break;
+		default: 
+			System.out.println("Wrong number of years"); 
+		}	
+	}	
+}

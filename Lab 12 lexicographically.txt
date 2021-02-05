@@ -1,0 +1,51 @@
+package Lab12;
+
+
+
+public class Lecture12 {
+            public static void main (String [] args)
+ {
+	
+				           //1.	Write a Java program to compare two strings lexicographically.
+				        //	Two strings are lexicographically equal if they are the same 
+				        // length and contain the same characters in the same positions.  
+				            	
+            	   
+            	        String s1 = "The content 2 ";
+            	        String s2 = "The content 1 ";
+            	        
+            	        System.out.println("String 1: " + s1);
+            	        System.out.println("String 2: " + s2); 
+            	       
+            	        // Compare these two strings.
+            	        int result = s1.compareTo(s2); 
+
+            	        // the results of the comparison.
+            	        if (result < 0)
+            	        {
+            	            System.out.println("" + s1 + " " +
+            	                " is less than " +
+            	                " " + s2 + " ");
+            	        }
+            	        else if (result == 0)
+            	        {
+            	            System.out.println(" " + s1 + " " +
+            	                " is equal to " +
+            	                "\"" + s2 + "\"");
+            	        }
+            	        else // if (result > 0)
+            	        {
+            	            System.out.println("\"" + s1 + "\"" +
+            	                " is greater than " +
+            	                "\"" + s2 + "\"");
+            	        }
+            	   
+            	   
+            	   
+            	   
+            	   }
+            	}
+	
+		 
+	 
+ 

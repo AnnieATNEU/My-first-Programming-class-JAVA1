@@ -1,0 +1,26 @@
+package ABCDE;
+
+public class Rectangle 
+{
+  //data Field
+	double Width;
+	double Length;
+	
+		
+ // Methods
+//==============================================
+//1st method print values of Width and Length
+public void printRec()
+{
+System.out.println("The Length = " + Length);
+System.out.println("The Width = " + Width);
+}
+//================================================
+//2nd method calculate area of rectangle
+public void CalArea()
+{
+	double result= Width*Length;
+System.out.println("The area of rectangle is " + result);
+
+}
+}

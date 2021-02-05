@@ -1,0 +1,27 @@
+package Lab13;
+
+import java.util.Scanner;
+
+public class Lecture13 {
+   
+	
+	public static void main (String [] args)
+   { 
+	  // a simple game (the guess my name game) using while
+		Scanner userinput= new Scanner (System.in);
+		
+		
+      //ask the user to enter a name and check if it is equal to your name.
+      // and check if it is equal to your name
+		String myname = "Annie";
+		String name = " ";
+		
+        while(!(name).equals(myname))
+		{
+			System.out.println("Please enter a name: ");
+			name=userinput.nextLine();	
+		}
+	    System.out.println ("Wow, You guess it right! ");
+        
+}
+}

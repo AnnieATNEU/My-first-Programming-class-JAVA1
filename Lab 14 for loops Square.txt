@@ -1,0 +1,43 @@
+package Lab14;
+
+import java.util.Scanner;
+
+public class Lecture14 {
+   
+	
+	public static void main (String [] args)
+   { 
+	  //Where N is given by the user
+		Scanner userinput=new Scanner (System.in);
+		System.out.println("Please Enter a Number");
+		int Number=userinput.nextInt();
+		
+	//========================================
+	   // Write a Java Program for calculating
+		//the square of N numbers.	
+		
+		for(int count=1 ;count < Number;count++)
+	    	{
+	    	System.out.println("The Square = " + (count*count));
+	    	  
+	    	}
+		
+		
+		
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+} 
+}

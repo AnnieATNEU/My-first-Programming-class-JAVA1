@@ -1,0 +1,30 @@
+package Lab10;
+
+import java.util.Scanner;
+
+public class Lecture10
+{
+	
+	
+	public static void main (String [] args)
+	{
+		
+		Scanner input=new Scanner (System.in);	
+	    double score ;
+	    System.out.println (" Enter the first Score: ");
+	    score =input.nextDouble();
+		
+	    if (( score >=93)||(score == 100))
+		System.out.println("A");		
+		else if ((score>=90)|| (score==92))	
+		System.out.println("B");
+		else if ((score>=87)|| (score==89))	
+		System.out.println("B+");
+		
+		input.close();
+	   
+	
+	}
+	}
+
+

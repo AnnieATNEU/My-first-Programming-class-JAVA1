@@ -1,0 +1,13 @@
+How to Remove/Disable USB Write Protection - Quick CMD Steps:
+
+
+
+Step 1. Run CMD as administrator
+
+Step 2. Type diskpart.exe
+
+Step 3. Type list disk
+
+Step 4. Type select disk + number
+
+Step 5. Type attributes disk clear readonly

@@ -1,0 +1,16 @@
+package ABCDE;
+
+public class Shapes {
+
+	public static void main(String[] args)
+	{
+		
+		Rectangle Rec1= new Rectangle();
+		Rec1.Length=4.2;
+		Rec1.Width=5.12;
+		Rec1.printRec();
+		Rec1.CalArea();
+		
+}
+
+}

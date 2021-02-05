@@ -1,0 +1,86 @@
+package Lab07;
+import java.util.Scanner;
+
+public class lecture07
+{
+
+public static void main(String [] args)	
+	
+
+	{
+		
+        double length, width, height; //declare length, width, and height;
+        double paintingcost;
+        double carpetcost;
+        double window1width ,window1height ,window2width, window2height;
+        double bookshelfwidth, bookshelfheight;
+        double doorwidth, doorheight;
+        Scanner input= new Scanner (System.in); //declare and initialize Scanner object
+ 
+ 
+		System.out.println ("Enter length of room in ft:");
+		length = input.nextDouble();
+ 
+		System.out.println ("Enter width of room in ft:");  
+		width= input.nextDouble();
+		
+		System.out.println ("Enter height of room in ft:");
+		height = input.nextDouble();
+		
+		System.out.println ("Enter width of the door in ft:");  
+		doorwidth= input.nextDouble();
+		
+		System.out.println ("Enter height of the door in ft:");  
+		doorheight= input.nextDouble();
+		
+		System.out.println ("Enter width of the 1st window in ft:");  
+		window1width= input.nextDouble();
+		
+		System.out.println ("Enter height of the 1st window  in ft:");  
+		window1height= input.nextDouble();
+		
+		System.out.println ("Enter width of the 2nd window in ft:");  
+		window2width= input.nextDouble();
+		
+		System.out.println ("Enter height of the 2nd window in ft:");  
+		window2height= input.nextDouble();
+		
+		System.out.println ("Enter width of the bookshelf in ft:");  
+		bookshelfwidth= input.nextDouble();
+		
+		System.out.println ("Enter height of the bookshelf in ft:");  
+		bookshelfheight= input.nextDouble();
+		
+				
+		 double areaofdoor = (doorwidth * doorheight);
+		 double areaofbookshelf =( bookshelfwidth * bookshelfheight );
+		 double areaofwindow1= (window1width * window1height);
+		 double areaofwindow2= (window2width * window2height);
+		//* Do the formula to get the result, here I multiply wall-
+		 // length and width to get the area of wall and multiply by 4 to get the 
+		 // area of the whole room
+		 double totalSqFt1 =( length * width)*4 ; 
+		 double totalSqFt2 =( length * width) ;
+		     
+	        // printing out the final square foot after subtracting windows,door and bookshelf area//
+		 double finaltotalSqFt = ( totalSqFt1 - (areaofdoor+areaofbookshelf+areaofwindow1+areaofwindow2));
+        System.out.println ("The total square footage of the room is: " + finaltotalSqFt);
+        
+      
+        
+        
+        System.out.println ("Enter the cost of painting the room per square ft: " );  
+		paintingcost= input.nextDouble();
+		
+		double cost= ( paintingcost * finaltotalSqFt);
+		System.out.println ("The estimated cost for painting this room is : " + cost );
+	       
+		System.out.println ("Enter the cost of installing carpet per square ft: " );  
+	    carpetcost= input.nextDouble();
+	    // multiplying entered carpetcost with the original total sq ft before the deductions from windows,door and bookshelf
+	    double costforcarpet= ( carpetcost * totalSqFt2 );
+		System.out.println ("The estimated cost for installing a carpet in this room is : " + costforcarpet );
+	      	
+	  input.close();
+	}
+    }

@@ -1,0 +1,112 @@
+Parking.java
+
+
+public class Parking {
+	public static void main(String[] args)
+	{
+		Garage A1=new Garage();
+		double total= A1.calculateCharges(24);
+	    A1.hourCustomer();
+	}
+}
+
+
+//========================================================
+Garage.java
+
+import java.util.Scanner;
+
+public class Garage
+{
+	
+public static void hourCustomer()
+{ 
+	double allCustomer=0.0;
+	int CusIdAll=0;
+	int CusId=0;
+	
+	//=========================================
+	
+	//Calculate and display the parking charges for each customer who parke in the garage yesterday.
+	//Calculate and display the running total of yesterday's receipts.
+	
+	double yesterHour1=2.0;
+	double yesterHour2=4.0;
+	double yesterHour3=5.0;
+	double yesterHour4=10.0;
+	
+	int TotalNum=4;
+	double Yesterdaytotalcharge1=calculateCharges(yesterHour1);
+	double Yesterdaytotalcharge2=calculateCharges(yesterHour2);
+	double Yesterdaytotalcharge3=calculateCharges(yesterHour3);
+	double Yesterdaytotalcharge4=calculateCharges(yesterHour4);
+	
+	double YestallCustom=Yesterdaytotalcharge1+Yesterdaytotalcharge2+Yesterdaytotalcharge3+Yesterdaytotalcharge4;   
+			
+	Scanner input=new Scanner(System.in);
+	System.out.println("========= This is a Parking Automatic System ========");
+	System.out.println("=====================================================");
+	
+	System.out.println("Please Enter hours Parked or (Negative to quit)");
+	double hours=input.nextDouble();
+	
+	System.out.println("Please Enter Customer Number");
+	int CustId=input.nextInt();
+	
+	
+	while(hours >=0.0)
+	{
+	
+	double totalcharge=calculateCharges(hours);
+	// this is to calculate fee for all customers
+	//display the charge for all customer
+	
+	allCustomer= allCustomer+ totalcharge;
+    CusIdAll= CusIdAll+ CusId;
+    
+	System.out.println("The total = $" + totalcharge);
+	System.out.println("Please Enter hours Parked or (Negative to quit)");
+	hours=input.nextDouble();
+	System.out.println("Please Enter Customer Number");
+	CusId=input.nextInt();
+    }
+	
+	
+	System.out.println("=====================YESTERDAY===================");
+	System.out.println("The total Number of customers yesterday is = $" + TotalNum);
+	
+	System.out.println("The total Fees for Yesterday's Customers are = $ " + YestallCustom);
+	System.out.println("=====================================================");
+	
+	
+	System.out.println("=========================TODAY===========================");
+	System.out.println("The total Number of customers Today is = $ " + CusIdAll);
+	
+	System.out.println("The total Fees for today's Customers are = $ " + allCustomer);
+	System.out.println("=====================================================");
+
+	
+}	
+//=========================================================
+public static double calculateCharges(double hours)
+{
+      double charge=2.0;
+      
+      if (hours > 3)
+      charge=2.0 + (hours-3.0) * 0.5;
+      
+      if(hours > 23)
+      charge=10.0;
+     
+     
+      
+    	  
+    	  return charge;
+}
+}
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+Main Method
+package Lab14;
+import java.util.*;
+public class Mainmethod 
+{
+	public static void main (String[] args)
+	{
+		User A1=new User("Fatema");
+		User A2=new User("Jack");
+		
+		int totalnumber=A1.getnumber();
+		System.out.println("The number of users = "+ totalnumber);
+
+}
+}
+===================================================================================
+User.java (class)
+package Lab14;
+//import java.util.*;
+public class User
+{
+ private String username;
+ private int id;
+ private static int numberofusers=0;
+ 
+ //==================================================
+ 
+ public User(String Newusername)
+ {
+	 username=Newusername;
+	 id=numberofusers;
+	 numberofusers++;
+ }
+ public int getnumber()
+ {
+	 return numberofusers;
+ }
+ 
+ 
+ 
+ public String toString()
+ {
+	 
+	 return username + ":" + id;
+	 
+ }
+}

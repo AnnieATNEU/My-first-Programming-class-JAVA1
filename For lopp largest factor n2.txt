@@ -1,0 +1,28 @@
+package Lab15;
+
+import java.util.Scanner;
+
+public class Lecture15 {
+	
+	public static void main (String [] args)
+	{
+		//Write a program that prompts the user to enter and
+		// integer n (assume n >= 2) 
+		//and displays its largest factor other than itself.   
+		  
+		   Scanner inp = new Scanner(System.in);
+	       System.out.println("Enter a number: ");
+	       int num = inp.nextInt();
+	       int i = num; 
+	       // since largest factor can not be greater than half of a number.
+	       for(i=num/2; i>=2;i--)
+	       {
+	           if(num%i==0)
+	               break;
+	       }
+	      
+	       System.out.println("The largest factor other than " + num + "" + "\"" +" is " + i);
+		
+	
+	}
+		}

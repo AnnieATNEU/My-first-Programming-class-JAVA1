@@ -1,0 +1,27 @@
+package Lab09;
+import java.util.*;
+public class Lecture09 {
+	
+	public static void main(String[] args )
+  {
+	   // 
+		Scanner input=new Scanner(System.in);
+		System.out.println("Please Enter an integer");
+        int number= input.nextInt();
+	
+	// If the number is multiple of 5
+       if (number  % 5==0)
+       {
+    	  System.out.println("HiFive") ;
+    	   
+       }
+       
+    // If the number is divided by 2, it displays HiEven
+       if (number % 2==0)
+    
+       {
+    	   System.out.println("HiEven") ;  
+       }
+       }
+	
+}

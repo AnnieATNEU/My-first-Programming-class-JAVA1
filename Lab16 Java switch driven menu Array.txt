@@ -1,0 +1,86 @@
+package Lab16;
+import java.util.Scanner;
+public class Lecture16 
+{
+ public static void main(String [] args)	
+ 
+ {
+	 /*
+	  Write a menu driven Java program with following option
+	  1.Enter the elements of the array
+	  2.Display elements of the array
+	  3.Find Sum and Average of Array elements.
+	  4.find largest and smallest elements of an array
+	  */
+
+	      //the menu Design
+	 Scanner input = new Scanner (System.in);
+	 int option;
+	 System.out.println("Please Enter the size of the array : ");
+	 int size=input.nextInt();
+	 int list [] = new int[]{1,2,3,4};
+	 int sum=0;
+	 float average;
+	 int largest = list[0];
+	 int smallest = list[0];
+ 
+	 do {
+	System.out.println("1.Enter the elements of the array");
+	System.out.println("2.Display elements of the array");
+	System.out.println("3.Find Sum and Average of Array elements.");
+	System.out.println("4.Find largest and smallest elements of an array");
+	
+	System.out.println("Please Select an option");
+	option=input.nextInt();
+	
+	switch (option)
+	{
+	case 1 :
+		   for (int i=0 ; i<list.length ; i++)
+	    {
+			   System.out.println("Enter the elements of the array");  
+			   list[i]=input.nextInt();
+	    }
+	    break;
+	case 2:
+	    for (int i=0 ; i<list.length ; i++)
+	    {
+	    	System.out.println("list["+ i +"]="+list[i]);
+	    	
+	    }
+	    break;
+	case 3:
+	    for (int i=0 ; i<list.length ; i++)
+	    {
+	    	System.out.println("Enter a number");
+	    	list [i]= input.nextInt();
+	    	sum = sum + list[i]; 
+	    }
+	    System.out.println("Sum of Array : "+ sum);
+         average = (float) sum / list.length;
+        System.out.println("Average of Array : "+ average);
+	    
+	    break;
+	case 4:
+	    for (int i=0 ; i<list.length ;i++)
+	   { 
+	    	 if(list[i] > largest)
+	    	 
+	    		 largest = list[i];
+	    	 
+	    	if (list[i] <= smallest)
+                 
+        	       smallest = list[i];
+        }
+            
+	    System.out.println("Largest Number is : " + largest);
+        System.out.println("Smallest Number is : " + smallest);
+        break;
+	   }
+	 
+		
+ }
+	     while (option !=4);
+}
+}
+

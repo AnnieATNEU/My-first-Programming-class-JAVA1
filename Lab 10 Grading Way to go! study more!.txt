@@ -1,0 +1,33 @@
+package Lab10;
+
+import java.util.Scanner;
+
+public class Lecture10
+{
+	
+	
+	public static void main (String [] args)
+	{
+		
+		Scanner input=new Scanner (System.in);	
+	    double score1 ;
+	    double score2 ;
+	    System.out.println (" Enter the 1st Exam Score: ");
+	    score1 =input.nextDouble();
+	    System.out.println (" Enter the 2nd Exam Score: ");
+	    score2 =input.nextDouble();
+	   
+	    if ((score1>=90 && score2 >=90))
+	    	System.out.println("Way to go!");	
+	    else if ((score1 <=70 || score2 <=70))
+	    	System.out.println("Study more!");		
+	    else 
+	    {
+	    System.out.println("Keep it up!");	
+	    }
+	
+	
+	}
+	}
+
+

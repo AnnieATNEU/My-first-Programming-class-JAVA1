@@ -1,0 +1,55 @@
+myclass
+===============================
+package Lab18;
+
+import java.util.Scanner;
+
+public class Myclass 
+{
+	public static void main(String [] args)
+	{
+		
+		
+		lecture18 input1= new lecture18();
+		input1.reverse();
+		
+}
+}
+========================================
+lecture18.java
+====================================
+package Lab18;
+
+import java.util.Scanner;
+
+public class lecture18 
+{
+	/*input =234
+	*output should be= 432 reverse
+	*
+	*
+	*/
+public static void reverse()
+{
+	
+	String revnum="";
+	Scanner input=new Scanner (System.in);
+	System.out.println("Please enter a number");
+	String num=input.nextLine(); //345
+	
+	for (int i=num.length()-1; i>=0 ; i--)
+	{
+		revnum=revnum+num.charAt(i);
+	}
+	
+	System.out.println(revnum);
+	
+	
+	
+	
+	
+	
+
+
+
+}}

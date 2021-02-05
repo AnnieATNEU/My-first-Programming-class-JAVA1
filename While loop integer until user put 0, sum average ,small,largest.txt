@@ -1,0 +1,57 @@
+package Lab16;
+import java.util.Scanner;
+public class Lecture16 
+{
+ public static void main(String [] args)	
+ 
+ {
+	 /*
+	 Write a program that reads integers from the keyboard until a user enters zero. Have the program print
+•	the sum of all the numbers entered, 
+•	the largest number entered, 
+•	the smallest number entered. 
+
+	  */
+
+	    int number = 0;
+	    int sum = 0;
+	    int large = 0;
+	    int small = 0;
+	    double average;
+
+	    System.out.print("Enter a number : ");
+	    Scanner in = new Scanner(System.in);
+
+	    while ((number = in.nextInt()) != 0) 
+	    {
+
+	        small = in.nextInt();
+	        large = in.nextInt();
+
+	        if (number != 0)
+	            sum = number + sum;
+	            sum++;
+
+	        if (number > large)
+	            large = number;
+
+	        if (number < small)
+	            small = number;
+	    
+ 
+	       if (number >= 0) {
+             
+	        average = sum / number;
+	        number = sum;
+
+	        System.out.println("The smallest integer is: " + small);
+	        System.out.println("The largest integer is: " + large);
+	        System.out.println("Total number of integers entered is " + number);
+	        System.out.println("The average value is: " + average);
+	       } else
+	       
+
+	            System.out.println();
+}
+}}
+

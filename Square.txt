@@ -1,0 +1,35 @@
+     //This is Annie's code
+
+package lab04;
+
+import java.util.Scanner;
+
+public class Lecture04 
+	
+	
+	{
+	    public static void main (String[] args)	
+	   
+	    {
+	                   //Program for calculating a Square
+	        
+	    				// Step 1 :Create a string
+	    		        
+	    	            System.out.println("Enter Side of Square:");
+	    	            //Step 2: Capture the user's input and create a scanner object
+	    	                 
+	    	            Scanner scanner = new Scanner(System.in);
+	    	            //Data type and storing the captured value in a variable
+	    	            double side = scanner.nextDouble();
+	    	            
+	    	            //Step 3: Formula is Area of Square = side*side
+	    	            double area = side*side; 
+	    	            //printing out the string and the value of the variable above
+	    	            System.out.println("Area of Square is: "+area); 
+			     scanner.close();   
+	    		      
+	 }
+	    		
+	   
+		
+}
