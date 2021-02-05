@@ -1,0 +1,27 @@
+package Lab14;
+
+import java.util.Scanner;
+
+public class Lecture14 {
+   
+	
+	public static void main (String [] args)
+   { 
+	  // Write a program that use do while
+	// to read integer values
+		//from the user until 1 and 100 (inclusive is entered.
+		Scanner input= new Scanner (System.in);
+		
+		int number;
+		do
+      {
+			System.out.println("Please enter a Number");
+			number =input.nextInt();  
+      }
+      while(number < 1 || number > 100);
+		{
+			System.out.println("you're done...! ");
+        }
+		
+} 
+}

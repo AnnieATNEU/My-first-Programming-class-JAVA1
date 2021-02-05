@@ -1,0 +1,28 @@
+package Lab12;
+
+import java.util.Scanner;
+
+   public class Lecture12 {
+            public static void main (String [] args)
+ {
+       
+      max= (x>y) ? x: y ;
+            	
+      score = (x>10) ? 3 * scale: 5* scale;
+      Scanner new input= scanner System.in(); 
+      max=       	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+            	
+    	 System.out.println("kk");
+	}
+	
+		 
+	 
+ }
+}

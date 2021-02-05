@@ -1,0 +1,41 @@
+Myclass.java
+================================
+package Lab18;
+
+public class Myclass 
+{
+	public static void main(String [] args)
+	{
+		int i=5;
+		String j="AB";
+		
+		lecture18 input= new lecture18();
+		input.MAX(5,2);
+		input.MAX(100,200);
+		
+}
+}
+
+lecture18
+======================================
+package Lab18;
+
+public class lecture18 
+{
+public static void MAX(int a, int b)
+{
+	  int max=0;
+      if(a>b)
+       {
+	     max=a;
+       }
+     else
+        {
+    	 max=b;
+        }
+	System.out.println(max);
+
+
+
+
+}}

@@ -1,0 +1,27 @@
+package Lab14;
+
+import java.util.Scanner;
+
+public class Lecture14 {
+   
+	
+	public static void main (String [] args)
+   { 
+	  //Write a for loop that prints all the numbers
+	  // between 100 and 200 (inclusive , in increasing order)
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Please enter a Number");
+		int number=sc.nextInt();
+		
+		int sum = 0;
+		
+		for (int count= 1 ; count<= number ; count++)
+		{
+			sum = sum + count;
+			
+			//System.out.println(sum);
+		}
+			System.out.println("The total is equal to " +sum);
+	
+} 
+}

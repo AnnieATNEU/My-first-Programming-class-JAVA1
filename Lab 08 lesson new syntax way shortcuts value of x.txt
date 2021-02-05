@@ -1,0 +1,23 @@
+package Lab08;
+
+public class Lecture08
+
+{
+
+	public static void main (String [] args)
+	{
+	int x=5;
+	int y=3;
+	x++;
+    System.out.println("x1="  + x);
+    x--;
+    System.out.println("x2="  + x);
+     x+=y; // x=x+y;
+    System.out.println("x3="  + x);
+	 x-=y; // x=x+y; 
+    System.out.println("x4="  + x);
+	 x*=y; //x=x*y;
+	System.out.println("x5="  + x);
+	
+	}
+}

@@ -1,0 +1,19 @@
+package Lab13;
+
+
+
+public class Lecture13 {
+	public static void main (String [] args)
+	{
+		int count=1;
+	    while (count<=10)
+	   {
+	   
+	    	System.out.println("I will study Hard");
+	    count++;
+	   }
+	   
+	
+	
+}
+}

@@ -1,0 +1,28 @@
+
+public class Ex10_Main {public static void main (String [] args)
+{
+    Ex_Q10 A1 = new Ex_Q10 ();
+    A1.UserInput();
+}
+}
+//===================================================================
+import java.util.Scanner;
+public class Ex_Q10 {
+	 //10.	 Write an application that prompts the user for the 
+	//radius of a circle and uses a method called circleArea to calculate 
+	//the area of the circle.
+	 public static double AreaOfCircle (double radius)
+	 {
+	 double area = radius * radius * Math.PI;
+    System.out.println("The area of the circle is : " + area);
+	return area;
+ }
+//================================================================================================================
+	public void UserInput ()
+		{
+	    Scanner input = new Scanner(System.in);
+	    System.out.println("Enter radius of Circle: ");
+	    double radius = input.nextDouble(); 
+	    double area= AreaOfCircle(radius);
+	  		}
+}

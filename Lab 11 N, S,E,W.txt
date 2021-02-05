@@ -1,0 +1,28 @@
+package Lab11;
+
+import java.util.Scanner;
+
+   public class Lecture11 {
+            public static void main (String [] args)
+ {
+	////make a program that gives you the direction
+	 Scanner input=new Scanner (System.in);
+	
+     
+     System.out.println ("Please Enter Either N, E, S, or W  : ");
+     char Direction=input.next().charAt(0);
+     switch (Direction)
+	{
+     case 'N': System.out.println("North");break;
+     case 'E': System.out.println("East");break;
+     case 'S': System.out.println("South");break;
+     case 'W': System.out.println("West");break;
+     
+     default:
+    	 System.out.println("Please Enter only N, E, S, or W ");
+	}
+	
+		 
+	 
+ }
+}

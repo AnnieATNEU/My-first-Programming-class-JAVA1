@@ -1,0 +1,31 @@
+package Lab16;
+
+public class Lecture16 
+{
+ public static void main (String [] args)	
+ 
+ {
+	int x=100;
+	int y=99;
+	int z =98;
+	//Arrays in Java
+
+	int [] A= {100,101,200};
+	
+	
+	System.out.println("This is before = " + A [0]);
+	A[0]=233;
+	A[1]=233;
+	A[2]=233;
+	
+	for (int i=0 ;i<A.length ;i++)
+	{
+	System.out.println(A [i]);
+	
+    }
+	
+	
+ }
+
+
+}

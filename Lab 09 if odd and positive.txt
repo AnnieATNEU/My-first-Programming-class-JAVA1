@@ -1,0 +1,31 @@
+package Lab09;
+import java.util.*;
+public class Lecture09 {
+	
+	public static void main(String[] args )
+  {
+	       // Write a java program that prints true if x is an odd number and positive
+		
+		Scanner input=new Scanner(System.in);
+		System.out.println("Please enter the number: ");
+        int x = input.nextInt();
+        
+        
+	//  If x is odd and is not divisible by 2 
+       if ( (x % 2 !=0) && x>=0 ) 
+        
+       {
+               System.out.println("True");
+       }
+       
+       else 
+    	   
+       { 
+    	      System.out.println("False");
+       }
+          
+   
+    	     
+     }
+	
+}

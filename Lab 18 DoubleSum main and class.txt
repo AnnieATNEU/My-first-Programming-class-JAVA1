@@ -1,0 +1,61 @@
+package Lab18;
+package Lab18;
+
+import java.util.Scanner;
+
+public class Myclass 
+{
+	/*1. Write a method named DoubleSum() 
+	to find the sum of squares of 2 numbers. 
+	Two numbers should be entered by user,
+	and returns it to main (), 
+	then print the value in main() 
+	Ex. Input:2,3
+    Output: (2*2+3*3) =13
+
+	*/
+	public static void main(String [] args)
+	{
+		int sum;
+		lecture18 input= new lecture18();
+		sum=input.DoubleSum();
+		System.out.println(sum);
+		
+		
+}
+}
+====================================================
+lecture18
+import java.util.Scanner;
+
+public class lecture18 
+{/*1. Write a method named DoubleSum() 
+	to find the sum of squares of 2 numbers. 
+	Two numbers should be entered by user,
+	and returns it to main (), 
+	then print the value in main() 
+	Ex. Input:2,3
+    Output: (2*2+3*3) =13
+*/
+public static int DoubleSum( )
+{
+	
+	int sum=0;
+	Scanner input=new Scanner (System.in);
+	
+	System.out.println("Please enter the 1st number:");
+	int num1=input.nextInt();
+	
+	System.out.println("Please enter the 2nd number:");
+	int num2=input.nextInt();
+	sum= num1*num1+ num2*num2;	
+	
+	
+	return sum;
+	
+	
+	
+
+
+
+}}

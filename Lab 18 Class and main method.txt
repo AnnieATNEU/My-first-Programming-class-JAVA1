@@ -1,0 +1,46 @@
+package Lab18;
+
+public class lecture18 
+{
+public static int MAX(int a, int b)
+{
+	
+	  int max=0;
+      if(a>b)
+       {
+	     max=a;
+       }
+      else
+        {
+    	  max=b;
+        }
+	    return max ;
+
+
+
+
+}}
+
+
+=========================================
+myclass
+======================================
+package Lab18;
+
+import java.util.Scanner;
+
+public class Myclass 
+{
+	public static void main(String [] args)
+	{
+		/*Scanner input1=new Scanner (System.in);
+		 * System.out.println 
+		int x= input1.nextInt()
+		*/
+		
+		lecture18 input= new lecture18();
+		int result=input.MAX();
+		System.out.println(result);
+		
+}
+}

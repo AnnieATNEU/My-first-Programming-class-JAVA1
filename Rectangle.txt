@@ -1,0 +1,37 @@
+     //This is Annie's code
+
+package lab04;
+
+import java.util.Scanner;
+
+public class Lecture04 
+	
+	
+	{
+	    public static void main (String[] args)	
+	   
+	    {
+	                   //Program for calculating a Rectangle
+	        
+	    	// declare variables 
+	        double length = 0.0;
+	        double width = 0.0;
+	        double area = 0.0;
+
+	        // create Scanner class object to read input
+	        Scanner scanner = new Scanner(System.in);
+
+	        // read input
+	        System.out.print("Enter length of the rectangle: ");
+	        length = scanner.nextDouble();
+	        System.out.print("Enter width of the rectangle: ");
+	        width = scanner.nextDouble();
+
+	        // calculate area
+	        area = length * width;
+
+	        // display result
+	        System.out.println("Area of Rectangle = "+ area);
+		scanner.close();
+	    }
+}

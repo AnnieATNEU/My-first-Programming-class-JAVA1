@@ -1,0 +1,19 @@
+package Lab08;
+
+public class Lecture08
+
+{
+
+	public static void main (String [] args)
+	{
+	int p=2;
+	int q=3;
+	int r=3;
+	boolean result = (p<r);
+	
+	System.out.println("P is equal to r ="  + result );
+    System.out.println("P is equal to r ="  + (p==r));
+    System.out.println("P is equal to r ="  + (p!=r));
+    
+	}
+}

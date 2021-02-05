@@ -1,0 +1,73 @@
+package Lab19;
+
+import java.util.Scanner;
+
+public class Lab19 {
+	/*. Calculates and displays the parking charges 
+	 * for each customer who parked in the garage yesterday.
+	 *  Enter the hours parked for each customer. 
+	 *  Display the charge for the current customer. 
+	 *  Calculate and display the running total of yesterday’s receipts.
+	 *   Use the method calculateCharges to determine the charge 
+	 *   for each customer. 
+	 * 
+	 */
+	public static void calculateCharges ()
+	{
+		Scanner input= new Scanner(System.in);
+		System.out.println("Please Enter the Hours : ");
+		double hours=input.nextDouble();
+		
+		double fee=0;
+		if (hours<=3)
+		{  
+			fee=2;
+		   System.out.println("Your total fees are="+ fee);
+		}
+		else if((hours>3) && (hours<23))
+		{
+			double fee2;
+			fee2=fee+(hours-3)*0.5;
+		    System.out.println("Your total fees are=" +fee2);
+		
+		
+		}
+		else if(hours==24)
+		{
+			double fee3=10;
+			System.out.println("Your total fees (24hrs parking) are=" +fee3);
+		}
+			
+		return ;
+
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+============================================
+package Lab19;
+
+public class AllMain {
+	public static void main(String [] args)
+	
+	{
+		
+
+	    
+	    Lab19 input =new Lab19();
+		input.calculateCharges();
+		
+
+		
+	}
+
+}
+

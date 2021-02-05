@@ -1,0 +1,36 @@
+     //This is Annie's code
+
+package lab04;
+
+import java.util.Scanner;
+
+public class Lecture04 
+	
+	
+	{
+	    public static void main (String[] args)	
+	   
+	    {
+	                   //Program for calculating a Triangle
+	        
+	    				// Step 1 : base and height
+	    				//Storing the captured value in a variable
+	    					int base= 0;
+	    					int height= 0;
+	    					int area= 0;
+	    				//Step 2: Create a scanner object	
+	    	            Scanner scanner= new Scanner(System.in);
+	    	            
+	    	            System.out.print("Enter the length of the base of the triangle:");
+	    		        base= scanner.nextInt();
+	    	           
+	    		        System.out.print("Enter the length of the height of the triangle:");
+	    		        height= scanner.nextInt();
+	    		        
+	    		        //Step 3: Formula : area= ( base * height ) / 2
+	    		        //storing captured value in a variable
+	    		        area= (base * height) / 2; 
+	                    System.out.print("The area of triangle is :  " + area);
+			     scanner.close();
+	    }		
+}
